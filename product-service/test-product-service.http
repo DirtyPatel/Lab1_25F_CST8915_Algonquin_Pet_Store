@@ -1,5 +1,6 @@
 # Test the product-service
 
 ### Get list of products
-GET http://localhost:3030/products
+GET http://4.239.242.13:3030/products
+
 Accept: application/json

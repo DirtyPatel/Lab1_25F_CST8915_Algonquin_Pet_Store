@@ -71,7 +71,7 @@ export default {
   methods: {
     async fetchProducts() {
       try {
-        const response = await fetch('http://localhost:3030/products');
+        const response = await fetch('http://4.239.242.13:3030/products');  // changed to VM's Public IP
         if (response.ok) {
           this.products = await response.json();
         } else {
@@ -89,7 +89,7 @@ export default {
       }
 
       try {
-        const response = await fetch('http://localhost:3000/orders', {
+        const response = await fetch('http://4.239.242.13:3000/orders', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
